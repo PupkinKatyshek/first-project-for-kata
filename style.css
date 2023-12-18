@@ -27,35 +27,75 @@ body {
     url("fonts/TTLakesCompressed-Regular.eot") format("eot");
 }
 
-.header__logo {
-    margin-right: 16.73px;
+body{
+    background-color: #F8F8F8;
+    }
+
+.header__repair{
+    gap: 16px;
     position: relative;
 }
 
-.header__logo::after {
+.header__repair::before{
     content: "";
     position: absolute;
     display: inline-block;
-    top: 10px;
+    top: 5px;
     bottom: 0;
-    right: -16.73px;
+    left: -20px;
     width: 2px;
     height: 32px;
     border-radius: 1px;
     background: #eaeaea;
 }
 
+.header__logo {
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.left-part{
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 16px;
+
+}
+
+.center-part{
+    display: flex;
+    gap: 16px;
+    justify-content: flex-end;
+    position: absolute;
+    right: 162px;
+}
+
+@media (max-width: 500px){
+    .center-part{
+        display: none;
+    }
+}
+
+.right-part{
+    position: absolute;
+    right: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
 .header {
-    margin: 16px 16px;
+    padding: 16px 16px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
+    background-color: white;
 }
 
-.main{
-    background-color: #F8F8F8;
-}
+
 
 .h1 {
     margin: 24px 16px 24px 16px;
@@ -67,6 +107,7 @@ body {
     line-height: 40px;
     letter-spacing: -0.6px;
     position: relative;
+    background-color: #F8F8F8;
     /* border: 1px solid yellow; */
 }
 
@@ -98,6 +139,7 @@ body {
  padding-inline-start: 16px;
  box-sizing: border-box;
  margin-bottom: 8px;
+
 } 
 
 .navi__list::-webkit-scrollbar {
@@ -151,5 +193,24 @@ margin-right: 8px;;
 
 .logotip{
     display: flex;
+    width: 100%;
 }
 
+@media (min-width: 500px){
+    .about-block{
+        display: flex;
+        flex-direction: row;
+
+           }
+}
+
+@media (max-width: 500px) {
+    .about-cont{
+        display: none;
+    }
+    
+}
+
+main {
+    background-color: #F8F8F8;
+}
