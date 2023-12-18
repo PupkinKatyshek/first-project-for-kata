@@ -53,6 +53,10 @@ body {
     justify-content: space-between;
 }
 
+.main{
+    background-color: #F8F8F8;
+}
+
 .h1 {
     margin: 24px 16px 24px 16px;
     color: #1b1c21;
@@ -77,6 +81,10 @@ body {
     background-color: #41f6d7;
     border-radius: 5px;
     box-sizing: border-box;
+}
+
+.navi{
+    background-color: #F8F8F8;
 }
 
 .navi__list{
@@ -117,6 +125,7 @@ body {
 }
 
 .about{
+background-color: #F8F8F8;
 margin: 16px;
 font-size: 14px;
 font-family: "TT Lakes Regular";
@@ -133,9 +142,14 @@ letter-spacing: 0.2px;
     align-items: center;
     padding: 0px;
     margin: 16px;
+    background-color: #F8F8F8;
 }
 
 .down{
 margin-right: 8px;;
-
 }
+
+.logotip{
+    display: flex;
+}
+
