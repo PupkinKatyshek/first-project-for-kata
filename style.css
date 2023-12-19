@@ -70,7 +70,7 @@ body {
   right: 162px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   .center-part {
     display: none;
   }
@@ -213,7 +213,7 @@ body {
   width: 100%;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 520px) {
   .about-block {
     display: flex;
     flex-direction: row;
