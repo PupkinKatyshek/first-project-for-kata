@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    padding: 0;
+   padding: 0px;
     font-family: TT Lakes, Helvetica, sans-serif;
 }
 
@@ -52,7 +52,7 @@ body{
 .header__logo {
     align-items: center;
     flex-wrap: wrap;
-    
+    position: relative;
 }
 
 .left-part{
@@ -79,12 +79,12 @@ body{
 
 .right-part{
     position: absolute;
-    right: 24px;
+    right: 16px;
     flex-wrap: wrap;
     align-items: center;
     display: flex;
     justify-content: flex-end;
-    gap: 16px;
+      gap: 16px;
 }
 
 .header {
@@ -196,12 +196,52 @@ margin-right: 8px;;
     width: 100%;
 }
 
+
+
 @media (min-width: 500px){
     .about-block{
         display: flex;
         flex-direction: row;
-
+        width: 100%;
            }
+    .logotip{
+        display: flex;
+        width: 50%;
+        margin-right: 24px;
+    }
+        .about{
+            margin-left: 24px;
+            width: 50%;
+        }
+    .h1 {
+        margin: 24px 24px 32px 24px;
+    }
+    .h1::before{
+        left: -24px;
+    }
+
+    .navi__list{
+        padding-inline-start: 24px;
+        margin-right: 24px;
+    }
+    .header{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .right-part{right:24px;}
+   .header__logo{margin-left: 20px;}
+   .header__logo::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 10px;
+    bottom: 0;
+    left: -20px;
+    width: 2px;
+    height: 32px;
+    border-radius: 1px;
+    background: #eaeaea;   
+   }
 }
 
 @media (max-width: 500px) {
