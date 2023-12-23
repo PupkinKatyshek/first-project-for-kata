@@ -4,6 +4,7 @@ body {
   font-family: TT Lakes, Helvetica, sans-serif;
   max-width: 1120px;
   margin: 0px auto;
+  
 }
 
 @font-face {
@@ -57,14 +58,14 @@ body {
   position: relative;
 }
 
-.left-part {
+.header__left-part {
   align-items: center;
   flex-wrap: wrap;
   display: flex;
   gap: 16px;
 }
 
-.center-part {
+.header__center-part {
   display: flex;
   gap: 16px;
   justify-content: flex-end;
@@ -73,12 +74,12 @@ body {
 }
 
 @media (max-width: 510px) {
-  .center-part {
+  .header__center-part {
     display: none;
   }
 }
 
-.right-part {
+.header__right-part {
   position: absolute;
   right: 16px;
   flex-wrap: wrap;
@@ -113,7 +114,7 @@ body {
   
 }
 
-.h1-visible {
+.h1__visible {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -121,14 +122,14 @@ body {
   font-family: "TT Lakes Regular";
 }
 
-.h1-visible a {
+.h1__link {
   display: flex;
   flex-direction: row;
   text-decoration: none;
   margin-left: 32px;
  }
 
- .h1-visible img{
+ .h1__pic{
     margin-left: 8px;
  }
 
@@ -167,25 +168,39 @@ body {
   height: 0;
 }
 
-.navi__list--elem {
+.navi__elem {
   margin-right: 10px;
 }
 
-.navi__list--elem--name {
+.navi__name {
   box-sizing: border-box;
-
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
   padding: 7px 9.3px 7px 16.5px;
-  background: #fff;
-  border: 2px solid #b8ffec;
+  border: 2px transparent;
   border-radius: 6px;
   font-family: "TT Lakes Regular";
   text-decoration: none;
+  /* background: #fff; */
+  border: 2px solid transparent; 
 }
 
-.about {
+.navi__name:focus{
+    background: #fff;
+    border: 2px solid #b8ffec; 
+    outline: none !important;
+}
+
+.navi__name:hover{
+    /* box-sizing: border-box; */
+    /* margin-right: 2px; */
+   background: #fff;
+  border: 2px solid #b8ffec; 
+
+}
+
+.about__text {
   background-color: #f8f8f8;
   margin: 16px;
   font-size: 14px;
@@ -194,7 +209,7 @@ body {
   letter-spacing: 0.2px;
 }
 
-.btn {
+.about__btn {
   display: flex;
   font-family: "TT Lakes Regular";
   font-size: 16px;
@@ -206,27 +221,27 @@ body {
   background-color: #f8f8f8;
 }
 
-.down {
+.about__down {
   margin-right: 8px;
 }
 
-.logotip {
+.about__logotip {
   display: flex;
   width: 100%;
 }
 
 @media (min-width: 520px) {
-  .about-block {
+  .about {
     display: flex;
     flex-direction: row;
     width: 100%;
   }
-  .logotip {
+  .about__logotip {
     display: flex;
     width: 50%;
     margin-right: 24px;
   }
-  .about {
+  .about__text {
     margin-left: 24px;
     width: 50%;
   }
@@ -245,7 +260,7 @@ body {
     padding-left: 24px;
     padding-right: 24px;
   }
-  .right-part {
+  .header__right-part {
     right: 24px;
   }
   .header__logo {
@@ -266,7 +281,7 @@ body {
 }
 
 @media (max-width: 500px) {
-  .about-cont {
+  .about__cont {
     display: none;
   }
 }
@@ -276,7 +291,7 @@ main {
 }
 
 @media (max-width:1000px){
-    .h1-visible{
+    .h1__visible{
         display: none;
     }
 }
