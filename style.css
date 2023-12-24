@@ -4,7 +4,25 @@ body {
   font-family: TT Lakes, Helvetica, sans-serif;
   max-width: 1120px;
   margin: 0px auto;
-  
+  min-width: 320px;
+}
+
+img {
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  font-family: "TT Lakes Regular";
 }
 
 @font-face {
@@ -24,8 +42,7 @@ body {
 
 @font-face {
   font-family: "TT Lakes Normal";
-  src: local("TT Lakes Normal"),
-    url("fonts/TTLakes-Medium.woff") format("woff"),
+  src: local("TT Lakes Normal"), url("fonts/TTLakes-Medium.woff") format("woff"),
     url("fonts/TTLakes-Medium.ttf") format("ttf"),
     url("fonts/TTLakes-Medium.eot") format("eot");
 }
@@ -34,9 +51,29 @@ body {
   background-color: #f8f8f8;
 }
 
+.header {
+  position: relative;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff3e79;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header__buttons:hover {
+  opacity: 0.5;
+}
+
 .header__repair {
   gap: 16px;
   position: relative;
+  right: 0px;
 }
 
 .header__repair::before {
@@ -58,14 +95,14 @@ body {
   position: relative;
 }
 
-.header__left-part {
+.header__left {
   align-items: center;
   flex-wrap: wrap;
   display: flex;
   gap: 16px;
 }
 
-.header__center-part {
+.header__center {
   display: flex;
   gap: 16px;
   justify-content: flex-end;
@@ -73,13 +110,13 @@ body {
   right: 162px;
 }
 
-@media (max-width: 510px) {
-  .header__center-part {
+@media (max-width: 768px) {
+  .header__center {
     display: none;
   }
 }
 
-.header__right-part {
+.header__right {
   position: absolute;
   right: 16px;
   flex-wrap: wrap;
@@ -108,15 +145,12 @@ body {
   letter-spacing: -0.6px;
   position: relative;
   background-color: #f8f8f8;
-  /* border: 1px solid yellow; */
   display: flex;
   justify-content: space-between;
-  
 }
 
 .h1__visible {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   font-size: 16px;
   font-family: "TT Lakes Regular";
@@ -124,14 +158,20 @@ body {
 
 .h1__link {
   display: flex;
-  flex-direction: row;
-  text-decoration: none;
   margin-left: 32px;
- }
+  color: black;
+  border: 2px solid transparent;
+  align-items: center;
+}
 
- .h1__pic{
-    margin-left: 8px;
- }
+.h1__link:hover {
+  border: 2px solid turquoise;
+  border-radius: 6px;
+}
+
+.h1__pic {
+  margin-left: 8px;
+}
 
 .h1::before {
   position: absolute;
@@ -182,22 +222,19 @@ body {
   border-radius: 6px;
   font-family: "TT Lakes Regular";
   text-decoration: none;
-  /* background: #fff; */
-  border: 2px solid transparent; 
+  border: 2px solid transparent;
+  color: #7e7e82;
 }
 
-.navi__name:focus{
-    background: #fff;
-    border: 2px solid #b8ffec; 
-    outline: none !important;
+.navi__name:focus {
+  background: #fff;
+  border: 2px solid #b8ffec;
+  outline: none !important;
 }
 
-.navi__name:hover{
-    /* box-sizing: border-box; */
-    /* margin-right: 2px; */
-   background: #fff;
-  border: 2px solid #b8ffec; 
-
+.navi__name:hover {
+  background: #fff;
+  border: 2px solid #b8ffec;
 }
 
 .about__text {
@@ -205,9 +242,8 @@ body {
   margin: 16px;
   font-size: 14px;
   font-family: "TT Lakes Regular";
-  line-height: 18px; /* 128.571% */
+  line-height: 18px;
   letter-spacing: 0.2px;
-  /* width: 20%; */
 }
 
 .about__btn {
@@ -226,17 +262,11 @@ body {
   margin-right: 8px;
 }
 
-.about__logotip {
-  display: flex;
-  /* width: 50%; */
-}
+@media (min-width: 768px) {
+  body {
+    width: 768px;
+  }
 
-/* picture {
-    display: flex;
-    width: 100%;
-} */
-
-@media (min-width: 520px) {
   .about {
     display: flex;
     flex-direction: row;
@@ -266,7 +296,7 @@ body {
     padding-left: 24px;
     padding-right: 24px;
   }
-  .header__right-part {
+  .header__right {
     right: 24px;
   }
   .header__logo {
@@ -286,7 +316,10 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
+  body {
+    width: 320px;
+  }
   .about__cont {
     display: none;
   }
@@ -296,14 +329,18 @@ main {
   background-color: #f8f8f8;
 }
 
-@media (max-width:1000px){
-    .h1__visible{
-        display: none;
-    }
+@media (max-width: 1120px) {
+  .h1__visible {
+    display: none;
+  }
 }
 
-@media (min-width:1000px){
-    .header{
-        display: none;
-    }
+@media (min-width: 1120px) {
+  .header {
+    display: none;
+  }
+  .about__logotip {
+    display: flex;
+    max-width: 532px;
+  }
 }

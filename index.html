@@ -8,47 +8,54 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__left-part">
-        <a class="header__burger" href="#"
-          ><div><img src="pic/burger.svg" alt="picture" /></div
-        ></a>
-        <a class="header__logo" href="#"
-          ><div><img src="pic/Group.png" alt="logo" /></div
-        ></a>
+      <div class="header__left">
+        <button class="header__buttons header__burger" href="#">
+          <img src="pic/burger1.svg" alt="picture" />
+        </button>
+        <button class="header__logo" href="#">
+          <img src="pic/Group.png" alt="logo" />
+        </button>
       </div>
-      <div class="header__center-part">
-        <a href="#"><img src="pic/call.svg" alt="call" /></a>
-        <a href="#"><img src="pic/chat.svg" alt="chat" /></a>
-        <a href="#"><img src="pic/profile.svg" alt="profile" /></a>
+      <div class="header__center">
+        <button class="header__buttons" href="#">
+          <img src="pic/call.svg" alt="call" />
+        </button>
+        <button class="header__buttons" href="#">
+          <img src="pic/chat.svg" alt="chat" />
+        </button>
+        <button class="header__buttons" href="#">
+          <img src="pic/profile.svg" alt="profile" />
+        </button>
       </div>
-      <div class="header__right-part">
-        <a class="header__repair" href="#"
-          ><div class="header__repair-dec">
-            <img src="pic/repair.svg" alt="repair" /></div
-        ></a>
-        <a class="header__search" href="#"
-          ><div><img src="pic/checkstatus.svg" alt="search" /></div
-        ></a>
+      <div class="header__right">
+        <button class="header__buttons header__repair" href="#">
+          <img src="pic/repair.svg" alt="repair" />
+        </button>
+        <button class="header__buttons header__search" href="#">
+          <img src="pic/checkstatus.svg" alt="search" />
+        </button>
       </div>
     </header>
     <main>
-      <h1 class="h1">
+      <div class="h1">
         Услуги и сервисы
         <div class="h1__visible">
-          <a class="h1__link" href="#"
-            >Оставить заявку<img
+          <button class="h1__link" href="#">
+            Оставить заявку<img
               class="h1__pic"
               src="pic/repair.svg"
               alt="repair"
-          /></a>
-          <a class="h1__link" href="#"
-            >Статус ремонта<img
+            />
+          </button>
+          <button class="h1__link" href="#">
+            Статус ремонта<img
               class="h1__pic"
               src="pic/checkstatus.svg"
               alt="search"
-          /></a>
+            />
+          </button>
         </div>
-      </h1>
+      </div>
       <nav class="navi">
         <ul class="navi__list">
           <li class="navi__elem">
@@ -84,15 +91,10 @@
             Читать далее
           </button>
         </article>
-        <!-- <img
-          
-          src="pic/logotip-360.png"
-          alt="фото режимки"
-        /> -->
+
         <picture class="about__logotip">
-          <source srcset="pic/logotip-320.png" media="(min-width: 320px)" />
-          <source srcset="pic/logotip-360.png" media="(min-width: 360px)" />
-          <source srcset="pic/logotip-520.jpg" media="(max-width: 1120px)" />
+          <source media="(min-width: 1120px)" srcset="./pic/logotip-532.jpg" />
+          <source media="(min-width: 768px)" srcset="./pic/logotip-360.png" />
           <img src="pic/logotip-320.png" alt="Фотография ресепшен" />
         </picture>
       </div>
