@@ -90,8 +90,7 @@ body {
 }
 
 .header__logo {
-  align-items: center;
-  flex-wrap: wrap;
+  cursor: pointer;
   position: relative;
 }
 
