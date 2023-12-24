@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Ремонт техники</title>
   </head>
   <body>
     <header class="header">
@@ -36,10 +36,16 @@
         Услуги и сервисы
         <div class="h1__visible">
           <a class="h1__link" href="#"
-            >Оставить заявку<img class="h1__pic" src="pic/repair.svg" alt="repair"
+            >Оставить заявку<img
+              class="h1__pic"
+              src="pic/repair.svg"
+              alt="repair"
           /></a>
           <a class="h1__link" href="#"
-            >Статус ремонта<img class="h1__pic" src="pic/checkstatus.svg" alt="search"
+            >Статус ремонта<img
+              class="h1__pic"
+              src="pic/checkstatus.svg"
+              alt="search"
           /></a>
         </div>
       </h1>
@@ -57,9 +63,7 @@
             <a class="navi__name" href="#">Цены на услуги</a>
           </li>
           <li class="navi__elem">
-            <a class="navi__name" href="#"
-              >Адреса сервисных центров</a
-            >
+            <a class="navi__name" href="#">Адреса сервисных центров</a>
           </li>
           <li class="navi__elem">
             <a class="navi__name" href="#">Специальные цены</a>
@@ -80,7 +84,17 @@
             Читать далее
           </button>
         </article>
-        <img class="about__logotip" src="pic/tablelogo.png" alt="logotip" />
+        <!-- <img
+          
+          src="pic/logotip-360.png"
+          alt="фото режимки"
+        /> -->
+        <picture class="about__logotip">
+          <source srcset="pic/logotip-320.png" media="(min-width: 320px)" />
+          <source srcset="pic/logotip-360.png" media="(min-width: 360px)" />
+          <source srcset="pic/logotip-520.jpg" media="(max-width: 1120px)" />
+          <img src="pic/logotip-320.png" alt="Фотография ресепшен" />
+        </picture>
       </div>
     </main>
   </body>

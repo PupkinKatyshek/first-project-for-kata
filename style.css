@@ -25,9 +25,9 @@ body {
 @font-face {
   font-family: "TT Lakes Normal";
   src: local("TT Lakes Normal"),
-    url("fonts/TTLakesCompressed-Regular.woff") format("woff"),
-    url("fonts/TTLakesCompressed-Regular.ttf") format("ttf"),
-    url("fonts/TTLakesCompressed-Regular.eot") format("eot");
+    url("fonts/TTLakes-Medium.woff") format("woff"),
+    url("fonts/TTLakes-Medium.ttf") format("ttf"),
+    url("fonts/TTLakes-Medium.eot") format("eot");
 }
 
 body {
@@ -207,6 +207,7 @@ body {
   font-family: "TT Lakes Regular";
   line-height: 18px; /* 128.571% */
   letter-spacing: 0.2px;
+  /* width: 20%; */
 }
 
 .about__btn {
@@ -227,8 +228,13 @@ body {
 
 .about__logotip {
   display: flex;
-  width: 100%;
+  /* width: 50%; */
 }
+
+/* picture {
+    display: flex;
+    width: 100%;
+} */
 
 @media (min-width: 520px) {
   .about {
