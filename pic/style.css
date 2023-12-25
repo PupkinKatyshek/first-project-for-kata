@@ -113,7 +113,6 @@ body {
   .header__center {
     display: none;
   }
-
   .about__container {
     margin-left: 16px;
     margin-right: 16px;
@@ -275,7 +274,6 @@ body {
     width: 100%;
     margin: 24px 24px 24px 0px;
   }
-
   .about__container {
     width: 50%;
     display: flex;
@@ -284,7 +282,6 @@ body {
     margin-left: 24px;
     gap: 24px;
   }
-
   .about__logotip {
     display: flex;
     width: 50%;
@@ -299,7 +296,6 @@ body {
   .h1 {
     margin: 24px 24px 32px 24px;
   }
-
   .h1::before {
     left: -24px;
   }
@@ -308,20 +304,16 @@ body {
     padding-inline-start: 24px;
     margin-right: 24px;
   }
-
   .header {
     padding-left: 24px;
     padding-right: 24px;
   }
-
   .header__right {
     right: 24px;
   }
-
   .header__logo {
     margin-left: 20px;
   }
-
   .header__logo::before {
     content: "";
     position: absolute;
@@ -361,12 +353,10 @@ main {
   .header {
     display: none;
   }
-
   .about__logotip {
     display: flex;
     max-width: 532px;
   }
-
   body {
     width: 1120px;
   }
@@ -379,7 +369,6 @@ main {
     margin-left: 24px;
     gap: 24px;
   }
-
   .about__logotip {
     display: flex;
     width: 50%;
