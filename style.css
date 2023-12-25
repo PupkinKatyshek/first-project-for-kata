@@ -71,7 +71,6 @@ body {
 }
 
 .header__repair {
-  gap: 16px;
   position: relative;
   right: 0px;
 }
@@ -153,23 +152,21 @@ body {
   justify-content: space-between;
   font-size: 16px;
   font-family: "TT Lakes Regular";
+  gap: 16px;
 }
 
 .h1__link {
   display: flex;
-  margin-left: 32px;
+  font-family: "TT Lakes Normal";
   color: black;
   border: 2px solid transparent;
   align-items: center;
+  gap: 8px;
 }
 
 .h1__link:hover {
   border: 2px solid turquoise;
   border-radius: 6px;
-}
-
-.h1__pic {
-  margin-left: 8px;
 }
 
 .h1::before {
@@ -200,15 +197,12 @@ body {
   padding-inline-start: 16px;
   box-sizing: border-box;
   margin-bottom: 8px;
+  gap: 5px;
 }
 
 .navi__list::-webkit-scrollbar {
   width: 0;
   height: 0;
-}
-
-.navi__elem {
-  margin-right: 10px;
 }
 
 .navi__name {
@@ -247,18 +241,14 @@ body {
 
 .about__btn {
   display: flex;
-  font-family: "TT Lakes Regular";
+  font-family: "TT Lakes Normal";
   font-size: 16px;
   background-color: transparent;
   border: transparent;
   align-items: center;
   padding: 0px;
-  margin: 16px;
+  /* margin: 16px; */
   background-color: #f8f8f8;
-}
-
-.about__down {
-  margin-right: 8px;
 }
 
 @media (min-width: 768px) {
@@ -341,5 +331,8 @@ main {
   .about__logotip {
     display: flex;
     max-width: 532px;
+  }
+  body {
+    width: 1120px;
   }
 }
