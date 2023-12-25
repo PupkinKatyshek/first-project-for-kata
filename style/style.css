@@ -11,7 +11,7 @@ img {
   border: none;
   margin: 0;
   padding: 0;
-  display: block;
+  display: flex;
   max-width: 100%;
   height: auto;
   vertical-align: middle;
@@ -25,27 +25,28 @@ button {
   font-family: "TT Lakes Regular";
 }
 
-@font-face {
+/* @font-face {
   font-family: "TT Lakes";
-  src: local("TT Lakes"), url("fonts/TTLakes-Bold.woff") format("woff"),
-    url("fonts/TTLakes-Bold.ttf") format("ttf"),
-    url("fonts/TTLakes-Bold.eot") format("eot");
+  src: local("TT Lakes"), url("assets/fonts/TTLakes-Bold.woff") format("woff"),
+    url("assets/fonts/TTLakes-Bold.ttf") format("ttf"),
+    url("assets/fonts/TTLakes-Bold.eot") format("eot");
 }
 
 @font-face {
   font-family: "TT Lakes Regular";
   src: local("TT Lakes Regular"),
-    url("fonts/TTLakes-Regular.woff") format("woff"),
-    url("fonts/TTLakes-Regular.ttf") format("ttf"),
-    url("fonts/TTLakes-Regular.eot") format("eot");
+    url("assets/fonts/TTLakes-Regular.woff") format("woff"),
+    url("assets/fonts/TTLakes-Regular.ttf") format("ttf"),
+    url("assets/fonts/TTLakes-Regular.eot") format("eot");
 }
 
 @font-face {
   font-family: "TT Lakes Normal";
-  src: local("TT Lakes Normal"), url("fonts/TTLakes-Medium.woff") format("woff"),
-    url("fonts/TTLakes-Medium.ttf") format("ttf"),
-    url("fonts/TTLakes-Medium.eot") format("eot");
-}
+  src: local("TT Lakes Normal"),
+    url("assets/fonts/TTLakes-Medium.woff") format("woff"),
+    url("assets/fonts/TTLakes-Medium.ttf") format("ttf"),
+    url("assets/fonts/TTLakes-Medium.eot") format("eot");
+} */
 
 body {
   background-color: #f8f8f8;
@@ -112,6 +113,7 @@ body {
   .header__center {
     display: none;
   }
+
   .about__container {
     margin-left: 16px;
     margin-right: 16px;
@@ -273,6 +275,7 @@ body {
     width: 100%;
     margin: 24px 24px 24px 0px;
   }
+
   .about__container {
     width: 50%;
     display: flex;
@@ -281,6 +284,7 @@ body {
     margin-left: 24px;
     gap: 24px;
   }
+
   .about__logotip {
     display: flex;
     width: 50%;
@@ -295,6 +299,7 @@ body {
   .h1 {
     margin: 24px 24px 32px 24px;
   }
+
   .h1::before {
     left: -24px;
   }
@@ -303,16 +308,20 @@ body {
     padding-inline-start: 24px;
     margin-right: 24px;
   }
+
   .header {
     padding-left: 24px;
     padding-right: 24px;
   }
+
   .header__right {
     right: 24px;
   }
+
   .header__logo {
     margin-left: 20px;
   }
+
   .header__logo::before {
     content: "";
     position: absolute;
@@ -352,10 +361,12 @@ main {
   .header {
     display: none;
   }
+
   .about__logotip {
     display: flex;
     max-width: 532px;
   }
+
   body {
     width: 1120px;
   }
@@ -368,6 +379,7 @@ main {
     margin-left: 24px;
     gap: 24px;
   }
+
   .about__logotip {
     display: flex;
     width: 50%;
