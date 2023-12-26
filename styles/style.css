@@ -22,29 +22,37 @@ button {
   border: none;
   padding: 0;
   font-size: 16px;
-  font-family: "TT Lakes Regular";
+  font-family: "TT Lakes";
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: local("TT Lakes"), url("fonts/TTLakes-Bold.woff") format("woff"),
-    url("fonts/TTLakes-Bold.ttf") format("ttf"),
-    url("fonts/TTLakes-Bold.eot") format("eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"),
+    url("../assets/fonts/TTLakes-Regular.eot") format("embedded-opentype"),
+    url("../assets/fonts/TTLakes-Regular.woff") format("woff"),
+    url("../assets/fonts/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "TT Lakes Regular";
-  src: local("TT Lakes Regular"),
-    url("fonts/TTLakes-Regular.woff") format("woff"),
-    url("fonts/TTLakes-Regular.ttf") format("ttf"),
-    url("fonts/TTLakes-Regular.eot") format("eot");
+  font-family: "TT Lakes";
+  src: local("TT Lakes Medium"), local("TTLakes-Medium"),
+    url("../assets/fonts/TTLakes-Medium.eot") format("embedded-opentype"),
+    url("../assets/fonts/TTLakes-Medium.woff") format("woff"),
+    url("../assets/fonts/TTLakes-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: "TT Lakes Normal";
-  src: local("TT Lakes Normal"), url("fonts/TTLakes-Medium.woff") format("woff"),
-    url("fonts/TTLakes-Medium.ttf") format("ttf"),
-    url("fonts/TTLakes-Medium.eot") format("eot");
+  font-family: "TT Lakes";
+  src: local("TT Lakes Bold"), local("TTLakes-Bold"),
+    url("../assets/fonts/TTLakes-Bold.eot") format("embedded-opentype"),
+    url("../assets/fonts/TTLakes-Bold.woff") format("woff"),
+    url("../assets/fonts/TTLakes-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
 body {
@@ -141,7 +149,7 @@ body {
   color: #1b1c21;
   font-family: "TT Lakes";
   font-size: 28px;
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.6px;
@@ -155,13 +163,13 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
-  font-family: "TT Lakes Regular";
+  font-family: "TT Lakes";
   gap: 16px;
 }
 
 .h1__link {
   display: flex;
-  font-family: "TT Lakes Normal";
+  font-family: "TT Lakes";
   color: black;
   border: 2px solid transparent;
   align-items: center;
@@ -217,7 +225,7 @@ body {
   padding: 7px 9.3px 7px 16.5px;
   border: 2px transparent;
   border-radius: 6px;
-  font-family: "TT Lakes Regular";
+  font-family: "TT Lakes";
   text-decoration: none;
   border: 2px solid transparent;
   color: #7e7e82;
@@ -248,7 +256,7 @@ body {
 .about__text {
   background-color: #f8f8f8;
   font-size: 14px;
-  font-family: "TT Lakes Regular";
+  font-family: "TT Lakes";
   line-height: 18px;
   letter-spacing: 0.2px;
   overflow: hidden;
@@ -256,7 +264,7 @@ body {
 
 .about__btn {
   display: flex;
-  font-family: "TT Lakes Normal";
+  font-family: "TT Lakes";
   font-size: 16px;
   background-color: transparent;
   border: transparent;
