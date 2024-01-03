@@ -24,6 +24,10 @@ ul li {
   list-style: none;
 }
 
+.nav-main {
+  display: flex;
+}
+
 .nav-main__list {
   padding-left: 24px;
 }
@@ -48,11 +52,59 @@ ul li {
 
 .nav-main__link {
   text-decoration: none;
-  color: #7e7e82;
+  color: #1b1c21;
   font-family: TT Lakes;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: -0.2px;
   position: absolute;
+}
+
+.nav-main__link:hover {
+  color: #7e7e82;
+}
+
+.side-footer {
+  padding: 24px;
+}
+
+.side-footer__btns {
+  gap: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.address__mail {
+  text-decoration: none;
+  color: #1b1c21;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+}
+
+.address__tel {
+  text-decoration: none;
+  color: #1b1c21;
+  font-family: TT Lakes;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: -0.6px;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding-left: 0px;
 }
