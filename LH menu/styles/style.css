@@ -1,8 +1,17 @@
+html,
 body {
+  height: 100%;
+}
+
+.lh-side {
   display: flex;
   flex-direction: column;
   width: 320px;
-  background-color: aliceblue;
+  background-color: #fff;
+  margin-right: auto;
+  position: absolute;
+  left: 0px;
+  height: 100vh;
 }
 
 .side-bar {
@@ -66,7 +75,12 @@ ul li {
 }
 
 .side-footer {
+  margin-top: 230px;
+  flex-direction: column;
+  display: flex;
+  gap: 16px;
   padding: 24px;
+  align-items: flex-start;
 }
 
 .side-footer__btns {
@@ -78,6 +92,8 @@ ul li {
 .address {
   display: flex;
   flex-direction: column;
+  gap: 12px;
+  /* align-self: center; */
 }
 
 .address__mail {
@@ -98,13 +114,30 @@ ul li {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px;
   letter-spacing: -0.6px;
 }
 
 .lang {
+  margin-top: 30px;
   display: flex;
   flex-direction: row;
   gap: 16px;
   padding-left: 0px;
+}
+
+.lang__label {
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+.lang__label:hover {
+  color: #7e7e82;
+}
+
+.lh-side--surfaced {
+  width: 320px;
+  box-shadow: 5px -30px 40px 20px #bfc1c8;
+  left: 0px;
+  transition: 500ms;
 }
