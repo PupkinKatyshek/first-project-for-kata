@@ -274,6 +274,7 @@ body {
   font-weight: 500;
   letter-spacing: -0.2px;
   background-color: #f8f8f8;
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
