@@ -15,7 +15,7 @@
           <img src="../LH menu/assets/images/x-close.svg" alt="close" />
         </button>
         <a class="logo" href="#">
-          <img src="../assets/images/Group.png" alt="logo"
+          <img src="assets/images/LHGroup.svg" alt="logo"
         /></a>
         <button class="buttons side-bar__search">
           <img src="../LH menu/assets/images/LHsearch.svg" alt="search" />
@@ -24,7 +24,7 @@
       <nav class="nav-main">
         <ul class="nav-main__list">
           <li class="nav-main__item">
-            <a class="nav-main__link" href="#">Ремонт техники</a>
+            <a class="nav-main__link" href="#" autofocus>Ремонт техники</a>
           </li>
           <li class="nav-main__item">
             <a class="nav-main__link" href="#">Услуги и сервисы</a>
@@ -65,11 +65,36 @@
           <a class="address__mail" href="mailto:#">mail@cps.com</a>
           <a class="address__tel" href="tel:88008908900">8 800 890 8900</a>
         </address>
-        <ul class="lang">
-          <li><a class="lang__label" href="#">RU</a></li>
+        <div class="lang">
+          <div>
+            <input
+              type="radio"
+              class="lang__switcher"
+              id="RU"
+              name="language"
+              checked="checked"
+            /><label class="lang__label" for="RU">RU</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              class="lang__switcher"
+              id="EN"
+              name="language"
+            /><label class="lang__label" for="EN">EN</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              class="lang__switcher"
+              id="CH"
+              name="language"
+            /><label class="lang__label" for="CH">CH</label>
+          </div>
+          <!-- <li><a class="lang__label" href="#" autofocus>RU</a></li>
           <li><a class="lang__label" href="#">EN</a></li>
-          <li><a class="lang__label" href="#">CH</a></li>
-        </ul>
+          <li><a class="lang__label" href="#">CH</a></li> -->
+        </div>
       </footer>
     </div>
   </body>
