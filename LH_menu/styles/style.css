@@ -135,7 +135,7 @@ ul li {
   display: flex;
   flex-direction: row;
   gap: 10px;
-  padding-left: 24px;
+  padding-left: 0px;
   font-weight: 500;
 }
 
