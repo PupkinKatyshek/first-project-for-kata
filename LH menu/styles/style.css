@@ -11,7 +11,7 @@ body {
   margin-right: auto;
   position: absolute;
   left: 0px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .side-bar {
